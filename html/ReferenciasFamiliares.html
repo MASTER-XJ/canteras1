@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/stilos.css" type="text/css"/>
+    <script src="js/javascript.js"></script>
     <title>Hoja de vida</title>
 </head>
 <body>
 <div class="container-body">
 <header>
     <h1>Hoja de vida</h1>
+    <form>
+        <select id="Opcion" name="BackgroundChanger" onchange="colorChanger()">
+            <option value="">Cambiar color tema
+            <option value="#808080">Gris
+            <option value="cyan">Cyan
+            <option value="	#FFFFFF">Blanco
+            <option value="#09EAEA">Aqua
+        </select>
+    </form>
+    <h3 id="dummy"></h3>
    <nav>
         <a href="index.html" class="nav-menu" >Inicio</a>
         <a href="experiencialaboral.html" class="nav-menu" >Esperiencia Laboral</a>
@@ -20,18 +31,30 @@
 </header>
 <section>
     <article class="art2">
-        <h2>REFERENCIAS FAMILIARES</h2>
+        <h2>REFERENCIAS FAMILIARES</h2><hr>
+        <button id="boton" onclick="mostrarfam1()">Mostrar contenido</button>
+        <div id="fam1">
         <p><b>Liliana Maria Rodriguez </b><br>
             <b>Administradora Pública</b><br>
             Cel: 3206986239</p>
+            <button id="boton1" onclick="ocultarfam1();">Ocultar contenido</button>
+        </div>
         <hr>
+        <button id="botonfam2" onclick="mostrarfam2()">Mostrar contenido</button>
+        <div id="fam2">
         <p><b>Miriam Castro Usuga </b><br>
             <b>Psicologa organizacional</b><br>
             Cel: 3148573251</p>
+            <button id="boton2" onclick="ocultarfam2();">Ocultar contenido</button>
+        </div>
         <hr>
+        <button id="botonfam3" onclick="mostrarfam3()">Mostrar contenido</button>
+        <div id="fam3">
         <p><b>Cristian Rendon Rodriguez </b><br>
             <b>Ingeniero Informatico</b><br>
             Cel: 3144312587</p>
+            <button id="boton3" onclick="ocultarfam3();">Ocultar contenido</button>
+        </div>
         <hr>
 
     </article>

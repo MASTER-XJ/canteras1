@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/stilos.css" type="text/css"/>
+    <script src="js/javascript.js"></script>
     <title>Hoja de vida</title>
 </head>
 <body>
 <div class="container-body">
 <header>
     <h1>HOJA DE VIDA</h1>
+    <form>
+        <select id="Opcion" name="BackgroundChanger" onchange="colorChanger()">
+            <option value="">Cambiar color tema
+            <option value="#808080">Gris
+            <option value="cyan">Cyan
+            <option value="	#FFFFFF">Blanco
+            <option value="#09EAEA">Aqua
+        </select>
+    </form>
+    <h3 id="dummy"></h3>
     <nav>
         <a href="index.html" class="nav-menu" >Inicio</a>
         <a href="experiencialaboral.html" class="nav-menu" >Esperiencia Laboral</a>
@@ -23,6 +34,8 @@
     <article class="xp">
         <h2>EXPERIENCIA LABORAL</h2>
         <hr>
+        <button id="boton" onclick="mostrar();">Mostrar contenido</button>
+        <div id="exp1">
         <p> <b>SOLUCIONES FALCON S.A.S Apartadó, agosto 2019-  octubre 2021</b><br>
         <b>Daniela Andrea Berrio.</b>  Contacto 3147005804- 3127566424 </p>
         <b>Ingeniero de Sistemas</b><br>
@@ -42,8 +55,12 @@
                 </ul>
             </li>
         </ul>
+            <button id="boton1" onclick="ocultar();">Ocultar contenido</button>
+</div>
 
-        <hr>
+<hr>
+        <button id="botonexp2" onclick="mostrar2()">Mostrar contenido</button>
+        <div id="exp2">
         <p> <b>ECOSISTEMAS DE URABA Apartadó, agosto 2015-  octubre 2017</b><br>
             <b>Pablo Escobar López.  </b>  Contacto 3114152635 </p>
         <b>Ingeniero de Sistemas</b><br>
@@ -62,8 +79,12 @@
                 </ul>
             </li>
         </ul>
-        <hr>
+            <button id="boton2" onclick="ocultar2()">Ocultar contenido</button>
+</div>
 
+<hr>
+        <button id="botonexp3" onclick="mostrar3()">Mostrar contenido</button>
+        <div id="exp3">
         <p> <b>TORRES ABOGADOS Apartadó, agosto 2017-  octubre 2019</b><br>
             <b>Carmelo Lopera Vargas. </b>  Contacto 3209658525 </p>
         <b>Ingeniero de Sistemas</b><br>
@@ -83,8 +104,11 @@
                 </ul>
             </li>
         </ul>
+            <button id="boton3" onclick="ocultar3()">Ocultar contenido</button>
+        </div>
         <hr>
-
+        <button id="botonexp4" onclick="mostrar4()">Mostrar contenido</button>
+        <div id="exp4">
         <b>TRABAJADOR INDEPENDIENTE, Apartadó, febrero de 2013 hasta junio de 2015</b>
         <b>Ingeniero de Sistemas</b><br>
         <ul>
@@ -103,7 +127,11 @@
                 </ul>
             </li>
         </ul>
-        <hr>
+            <button id="boton4" onclick="ocultar4()">Ocultar contenido</button>
+        </div>
+
+<hr>
+
     </article>
 </section>
 <footer>

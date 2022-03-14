@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/stilos.css" type="text/css"/>
+    <script src="js/javascript.js"></script>
     <title>Hoja de vida</title>
 </head>
 <body>
 <div class="container-body">
 <header>
     <h1>Hoja de vida</h1>
+    <form>
+        <select id="Opcion" name="BackgroundChanger" onchange="colorChanger()">
+            <option value="">Cambiar color tema
+            <option value="#808080">Gris
+            <option value="cyan">Cyan
+            <option value="	#FFFFFF">Blanco
+            <option value="#09EAEA">Aqua
+        </select>
+    </form>
+    <h3 id="dummy"></h3>
    <nav>
         <a href="index.html" class="nav-menu" >Inicio</a>
         <a href="experiencialaboral.html" class="nav-menu" >Esperiencia Laboral</a>
@@ -20,10 +31,22 @@
 </header>
 <section>
     <article class="art2">
+
         <h2>ESTUDIOS REALIZADOS</h2> <hr>
-        <dd class="st">Pregrado en Ingeniería de Sistemas (Uniremington 2021-B)<br>
+
+        <button id="boton" onclick="mostrarpro()">Mostrar contenido</button>
+        <div id="pro">
+        <dd>Pregrado en Ingeniería de Sistemas (Uniremington 2021-B) </dd>
+            <button id="boton1" onclick="ocultarpro();">Ocultar contenido</button>
+        </div><hr>
+
+        <button id="botontec" onclick="mostrartec()">Mostrar contenido</button>
+        <div id="tec">
+        <dd>
             Técnico en Sistemas (Centro de Sistemas Urabá- 2013- B)
         </dd>
+            <button id="boton2" onclick="ocultartec();">Ocultar contenido</button>
+        </div>
         <hr>
     </article>
 </section>

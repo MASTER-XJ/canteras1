@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/stilos.css" type="text/css"/>
+    <script src="js/javascript.js"></script>
     <title>Hoja de vida</title>
 </head>
 <body>
-<div class="container-body">
+<div class="container-body" id="bodycon">
 <header>
     <h1>HOJA DE VIDA</h1>
+    <form>
+        <select id="Opcion" name="BackgroundChanger" onchange="colorChanger()">
+            <option value="">Cambiar color tema
+            <option value="#808080">Gris
+            <option value="cyan">Cyan
+            <option value="	#FFFFFF">Blanco
+            <option value="#09EAEA">Aqua
+        </select>
+    </form>
+    <h3 id="dummy"></h3>
     <nav>
         <a href="index.html" class="nav-menu" >Inicio</a>
         <a href="experiencialaboral.html" class="nav-menu" >Esperiencia Laboral</a>
@@ -59,7 +70,7 @@
     </div>
     <hr>
 </section>
-
+    <script src="js/javascript.js"></script>
 <footer>
     <p>&#169; 2022&#8211;9 <a href="#">juan Betancourt</a>
     <a id="download" href="download/HDV%20Juan%20C%20Betancourt%20C-%20canteras.pdf" download="Hoja de vida">Download H.V pdf</a></p>

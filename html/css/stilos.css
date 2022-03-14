@@ -1,6 +1,6 @@
 body{
     background: rgb(174, 182, 191);
-     width:1024px;
+     max-width:1024px;
      margin: auto;
 }
 .container-body {
@@ -87,10 +87,55 @@ width: 80%;
 }
 #aside1{
     width: 35%;
-    margin-top: 0px;
+    margin-top: 0;
     text-align: center;
 }
 
+#exp1{
+    display: none;
+}
+#exp2{
+    display: none;
+}
+#exp3{
+    display: none;
+}
+#exp4{
+    display: none;
+}
+#ref1{
+    display: none;
+}
+#ref2{
+    display: none;
+}
+#ref3{
+    display: none;
+}
+#fam1{
+    display: none;
+}
+#fam2{
+    display: none;
+}
+#fam3{
+    display: none;
+}
+#pro{
+    display: none;
+}
+#tec{
+    display: none;
+}
+
+button{
+    background-color: cornflowerblue;
+    font-size: 10px;
+
+}
+button:hover{
+    background: rgb(44, 62, 80);
+}
 
 footer{
     background: rgb(3, 28, 28,0.4);
@@ -106,4 +151,11 @@ footer{
 }
 #download:hover{
     background: rgb(44, 62, 80);
+}
+
+form {
+   font-family: Arial;
+    color: black;
+    margin-left: 81%;
+    margin-top: -50px;
 }

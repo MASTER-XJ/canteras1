@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/stilos.css" type="text/css"/>
+    <script src="js/javascript.js"></script>
     <title>Hoja de vida</title>
 </head>
 <body>
 <div class="container-body">
 <header>
     <h1>Hoja de vida</h1>
+    <form>
+        <select id="Opcion" name="BackgroundChanger" onchange="colorChanger()">
+            <option value="">Cambiar color tema
+            <option value="#808080">Gris
+            <option value="cyan">Cyan
+            <option value="	#FFFFFF">Blanco
+            <option value="#09EAEA">Aqua
+        </select>
+    </form>
+    <h3 id="dummy"></h3>
     <nav>
         <a href="index.html" class="nav-menu" >Inicio</a>
         <a href="experiencialaboral.html" class="nav-menu" >Esperiencia Laboral</a>
@@ -21,17 +32,29 @@
 <section>
     <article class="art2">
         <h2>REFERENCIAS PERSONALES</h2><hr>
+        <button id="boton" onclick="mostrarref1()">Mostrar contenido</button>
+        <div id="ref1">
         <p><b>Alejandro Perez Velasquez </b><br>
         <b>Ingeniero de Sistemas</b><br>
         Cel: 3122789186</p>
+            <button id="boton1" onclick="ocultarref1()">Ocultar contenido</button>
+        </div>
         <hr>
+        <button id="botonref2" onclick="mostrarref2()">Mostrar contenido</button>
+        <div id="ref2">
         <p><b>Henry Barrientos Tamayo </b><br>
             <b>Profesional Agencia Pública de empleo SENA</b><br>
             Cel: 3113241276</p>
+            <button id="boton2" onclick="ocultarref2()">Ocultar contenido</button>
+        </div>
         <hr>
+        <button id="botonref3" onclick="mostrarref3()">Mostrar contenido</button>
+        <div id="ref3">
         <p><b>Edwin Roman Tamayo </b><br>
             <b>Psicologo</b><br>
             Cel: 3102215632</p>
+            <button id="boton3" onclick="ocultarref3()">Ocultar contenido</button>
+        </div>
         <hr>
 
     </article>
