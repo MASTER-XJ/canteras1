@@ -1,0 +1,109 @@
+body{
+    background: rgb(174, 182, 191);
+     width:1024px;
+     margin: auto;
+}
+.container-body {
+
+    background: rgb(248, 249, 249);
+    border:2px solid black;
+    border-radius:22px;
+   }
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    color: blue;
+    font-family: "Arial Black";
+}
+header{
+    border-radius: 5px;
+}
+.nav-menu {
+    display: inline-block;
+    background: rgb(84, 153, 199);
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+    margin-left: 15px;
+}
+
+.nav-menu:hover{
+    background: rgb(44, 62, 80);
+}
+#barra-nav{
+    padding: 5px;
+
+}
+hr{
+    padding: 5px;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#datos {
+    width: 60%;
+    margin:auto;
+    font-size: 20px;
+    text-align: center;
+}
+#imgn {
+    width: 35%;
+    margin-top: auto;
+}
+img{
+    background: url("../img/Foto.PNG") no-repeat bottom right;
+    padding-right:  10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+#container-perfil {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#perfil{
+    width: 60%;
+    margin-top: auto;
+    text-align: center;
+}
+.xp{
+    width: 80%;
+    margin:auto;
+}
+.art2{
+width: 80%;
+    margin: auto;
+}
+
+.st{
+   text-align: center;
+
+}
+#aside1{
+    width: 35%;
+    margin-top: 0px;
+    text-align: center;
+}
+
+
+footer{
+    background: rgb(3, 28, 28,0.4);
+    border-radius: 15px;
+    padding: 12px;
+    margin-top: 10px;
+}
+#download{
+    margin-left: 60%;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#download:hover{
+    background: rgb(44, 62, 80);
+}
